@@ -29,7 +29,12 @@ I added in new code that shows a nice GUI.
 The Makefile for that is in GUI/ subdirectory. Just install a couple of qt packages
 and you should be all set to run it. There is a README file that lists those packages
 
-Running GUI:
+
+*Compiling:*
+32/64-bit linux (in the GUI directory):
+  make   
+
+*Running GUI:*
     sudo ./i7z_GUI
     
 

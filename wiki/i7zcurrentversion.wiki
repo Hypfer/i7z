@@ -1,0 +1,21 @@
+#summary Talks about the function of appending (single socket code only) and temperature measurement in i7z-0.26
+
+= Logging Functions =
+
+Logging can be done via calling i7z with
+
+*sudo ./i7z -w a*
+
+appends the frequencies of the cores in a file.
+
+*sudo ./i7z -w l*
+
+overwrites the frequencies of the cores in a file. just the latest measurement
+
+= Temperature =
+
+Temperature is counted by observing the MSR for Tj (temperature junction) and the digital readout
+
+Then, Temp =  Tj - digital readout
+
+Chapter 14 of this intel doc www.intel.com/Assets/ja_JP/PDF/manual/253668.pdf

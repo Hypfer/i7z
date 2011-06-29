@@ -8,7 +8,7 @@ Current Version: svn-31 (17/May/2010)
 
 
 *Requires*
-ncurses library. You might get a ncurses.h not found. Install the libncurses5-dev library in debian/ubuntu. Similar package should also exist in other linux distributions.
+ncurses library. You might get a ncurses.h not found. Install the libncurses5-dev library in debian/ubuntu ( *sudo apt-get install libncurses5-dev* ). Similar package should also exist in other linux distributions.
 
 
 *Compiling:*

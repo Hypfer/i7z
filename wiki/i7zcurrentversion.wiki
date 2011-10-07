@@ -13,12 +13,6 @@ appends the frequencies of the cores in a file.
 overwrites the frequencies of the cores in a file. just the latest measurement
 
 
-From revision 65 onwards
-
-*sudo ./i7z --wl*  from -w l
-
-*sudo ./i7z --wa*  from -w a
-
 = Temperature =
 
 Temperature is counted by observing the MSR for Tj (temperature junction) and the digital readout

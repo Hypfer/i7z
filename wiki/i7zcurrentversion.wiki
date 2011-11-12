@@ -20,3 +20,26 @@ Temperature is counted by observing the MSR for Tj (temperature junction) and th
 Then, Temp =  Tj - digital readout
 
 Chapter 14 of this intel doc www.intel.com/Assets/ja_JP/PDF/manual/253668.pdf
+
+
+= SVN version features =
+
+Updated to support additional functions
+
+Help menu via : ./i7z -h [OR] ./i7z --help
+
+Append to a log file:  ./i7z --write a [OR] ./i7z -w a
+
+Replacement instead of Append:  ./i7z --write l [OR] ./i7z -w l
+
+Default log file name is cpu_freq_log.txt (single socket) or cpu_freq_log_dual_%d.txt (dual socket)
+
+Specifying a different log file: ./i7z --logfile filename [OR] ./i7z -l filename
+
+Specifying a particular socket to print: ./i7z --socket0 X
+
+In order to print to a second socket use: ./i7z --socket1 X
+
+To turn the ncurses GUI off use: ./i7z --nogui
+
+Example: To print for two sockets and also change the log file ./i7z --socket0 0 --socket1 1 -logfile /tmp/logfilei7z -w l

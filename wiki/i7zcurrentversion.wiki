@@ -22,7 +22,7 @@ Then, Temp =  Tj - digital readout
 Chapter 14 of this intel doc www.intel.com/Assets/ja_JP/PDF/manual/253668.pdf
 
 
-= SVN version features =
+= SVN version and >= ver 0.27 features =
 
 Updated to support additional functions
 

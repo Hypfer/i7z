@@ -28,13 +28,26 @@ Updated to support additional functions
 
 Help menu via : `./i7z -h` OR `./i7z --help`
 
-Append to a log file:  `./i7z --write a` OR `./i7z -w a`
+Append to a log file (freq is always logged when logging is enabled, no way to disable freq logging [yet] ):  `./i7z --write a` OR `./i7z -w a`
 
 Replacement instead of Append:  `./i7z --write l` OR `./i7z -w l`
 
-Default log file name is cpu_freq_log.txt (single socket) or cpu_freq_log_dual_%d.txt (dual socket)
+(Enabling) Log the temperature (also needs the -w a or -w l option): `./i7z --logtemp` OR `./i7z -t`
 
-Specifying a different log file: `./i7z --logfile filename` OR `./i7z -l filename`
+(Enabling) Log the C-states (also needs the -w a or -w l option): `./i7z --logcstate` OR `./i7z -c`
+
+LOGGING DEFAULTS:
+(ENABLED by default when logging is enable) Default (freq) log file name is cpu_freq_log.txt (single socket) or cpu_freq_log_dual_%d.txt (dual socket)
+
+(DISABLED by default) Default temp log file name is cpu_temp_log.txt (single socket) or cpu_temp_log_dual_%d.txt (dual socket)
+
+(DISABLED by default) Default cstate log file name is cpu_cstate_log.txt (single socket) or cpu_cstate_log_dual_%d.txt (dual socket)
+
+Specifying a different (freq) log file: `./i7z --logfile filename` OR `./i7z -l filename`
+
+Specifying a different temperature log file: `./i7z --templogfile filename` [OR] `./i7z -x filename`
+
+Specifying a different cstate log file: `./i7z --cstatelogfile filename` [OR] `./i7z -p filename`
 
 Specifying a particular socket to print: `./i7z --socket0 X`  where X = 0, 1...
 

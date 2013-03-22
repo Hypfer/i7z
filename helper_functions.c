@@ -463,7 +463,7 @@ void Print_Information_Processor(bool* nehalem, bool* sandy_bridge)
             switch (proc_info.model)
             {
             case 0xA:
-                printf ("i7z DEBUG: Detected an ivy bridege processor\n");
+                printf ("i7z DEBUG: Detected an ivy bridge processor\n");
 		*nehalem = false;
   	    	*sandy_bridge = true;
                 break;
